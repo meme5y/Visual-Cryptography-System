@@ -19,7 +19,7 @@
  * This is for EDUCATIONAL purposes only
  */
 void encryptMessage(byte data[], int length) {
-  Serial.print("🔐 Criptografando: \"");
+  Serial.print("Criptografando: \"");
   for(int i = 0; i < length; i++) {
     Serial.print((char)data[i]);
   }
@@ -48,7 +48,7 @@ void encryptMessage(byte data[], int length) {
  * For clarity, we provide separate function
  */
 void decryptMessage(byte data[], int length) {
-  Serial.print("🔓 Descriptografando: Hex: ");
+  Serial.print("Descriptografando: Hex: ");
   for(int i = 0; i < length; i++) {
     if(data[i] < 0x10) Serial.print("0");
     Serial.print(data[i], HEX);
@@ -93,11 +93,11 @@ bool validateChecksum(byte data[], int length, byte receivedChecksum) {
   byte calculated = calculateChecksum(data, length);
   
   if(calculated == receivedChecksum) {
-    Serial.print("✅ Checksum válido: 0x");
+    Serial.print("Checksum válido: 0x");
     Serial.println(calculated, HEX);
     return true;
   } else {
-    Serial.print("❌ Checksum inválido! Recebido: 0x");
+    Serial.print("Checksum inválido! Recebido: 0x");
     Serial.print(receivedChecksum, HEX);
     Serial.print(", Calculado: 0x");
     Serial.println(calculated, HEX);
@@ -147,7 +147,7 @@ byte generateKey(byte seed) {
  * @brief Displays cryptographic configuration
  */
 void showCryptoKey() {
-  Serial.println("\n🔑 CONFIGURAÇÃO CRIPTOGRÁFICA:");
+  Serial.println("\n CONFIGURAÇÃO CRIPTOGRÁFICA:");
   Serial.print("Chave XOR: 0x");
   if(CRYPTO_KEY < 0x10) Serial.print("0");
   Serial.println(CRYPTO_KEY, HEX);

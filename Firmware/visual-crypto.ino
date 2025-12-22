@@ -101,7 +101,7 @@ void checkSpeedButton() {
  * Conceito: Feedback de configuração do sistema
  */
 void showCurrentSpeed() {
-  Serial.print("🎚️  Velocidade: ");
+  Serial.print("  Velocidade: ");
   Serial.print(transmissionSpeed);
   Serial.print("ms/bit (");
   
@@ -218,8 +218,8 @@ void processSerialCommand() {
  */
 void startTransmissionProtocol() {
   transmitting = true;
-  Serial.println("\n🚀 INICIANDO PROTOCOLO DE TRANSMISSÃO");
-  Serial.print("📡 Velocidade: ");
+  Serial.println("\n INICIANDO PROTOCOLO DE TRANSMISSÃO");
+  Serial.print(" Velocidade: ");
   Serial.print(transmissionSpeed);
   Serial.println("ms/bit");
   
@@ -236,7 +236,7 @@ void startTransmissionProtocol() {
   endTransmission();
   
   transmitting = false;
-  Serial.println("✅ TRANSMISSÃO CONCLUÍDA");
+  Serial.println(" TRANSMISSÃO CONCLUÍDA");
 }
 
 // ========== ALGORITMOS CRIPTOGRÁFICOS ==========
@@ -245,7 +245,7 @@ void startTransmissionProtocol() {
  * Criptografa mensagem usando XOR
  */
 void encryptMessage(byte data[], int length) {
-  Serial.print("🔐 Criptografando: ");
+  Serial.print(" Criptografando: ");
   for(int i = 0; i < length; i++) {
     Serial.print((char)data[i]);
     data[i] = data[i] ^ CRYPTO_KEY; // XOR encryption
@@ -279,7 +279,7 @@ byte calculateChecksum(byte data[], int length) {
  * Envia sequência de sincronização
  */
 void sendSyncSequence() {
-  Serial.println("📡 Enviando sequência de sincronização...");
+  Serial.println(" Enviando sequência de sincronização...");
   
   // Padrão de sincronização: 10101010
   for(int i = 0; i < 8; i++) {
@@ -299,7 +299,7 @@ void sendSyncSequence() {
  * Realiza handshake inicial
  */
 void performHandshake() {
-  Serial.println("🤝 Realizando handshake...");
+  Serial.println(" Realizando handshake...");
   
   // Envia byte de início
   sendByte(START_BYTE);
@@ -345,7 +345,7 @@ void sendPredefinedMessage(const char* message) {
  * Transmite pacote completo
  */
 void transmitPacket(MessagePacket packet) {
-  Serial.println("\n📦 TRANSMITINDO PACOTE:");
+  Serial.println("\n TRANSMITINDO PACOTE:");
   Serial.print("Start Byte: 0x");
   Serial.println(packet.startByte, HEX);
   Serial.print("Length: ");
@@ -422,7 +422,7 @@ void transmitBit(bool bit) {
  * Finaliza transmissão
  */
 void endTransmission() {
-  Serial.println("🔚 Finalizando transmissão...");
+  Serial.println("Finalizando transmissão...");
   
   // Sequência de término
   for(int i = 0; i < 3; i++) {
@@ -487,7 +487,7 @@ void showIdleAnimation() {
  * Executa teste de protocolo
  */
 void runProtocolTest() {
-  Serial.println("\n🧪 EXECUTANDO TESTE DE PROTOCOLO");
+  Serial.println("\n EXECUTANDO TESTE DE PROTOCOLO");
   
   // Teste em todas as velocidades
   for(int i = 0; i < NUM_SPEEDS; i++) {
@@ -510,14 +510,14 @@ void runProtocolTest() {
     delay(500);
   }
   
-  Serial.println("\n✅ Teste de protocolo concluído!");
+  Serial.println("\n Teste de protocolo concluído!");
 }
 
 /**
  * Mostra chave criptográfica
  */
 void showCryptoKey() {
-  Serial.println("\n🔑 CONFIGURAÇÃO CRIPTOGRÁFICA:");
+  Serial.println("\n CONFIGURAÇÃO CRIPTOGRÁFICA:");
   Serial.print("Chave XOR: 0x");
   Serial.println(CRYPTO_KEY, HEX);
   Serial.print("Chave (bin): ");
@@ -530,7 +530,7 @@ void showCryptoKey() {
  * Benchmark de velocidade
  */
 void runSpeedBenchmark() {
-  Serial.println("\n⏱️  BENCHMARK DE VELOCIDADE");
+  Serial.println("\n  BENCHMARK DE VELOCIDADE");
   
   Serial.println("Testando todas as velocidades disponíveis:");
   
@@ -560,7 +560,7 @@ void runSpeedBenchmark() {
  * Solicita mensagem customizada
  */
 void requestCustomMessage() {
-  Serial.println("\n💫 Digite a mensagem para transmitir (max 16 chars):");
+  Serial.println("\n Digite a mensagem para transmitir (max 16 chars):");
   while(!Serial.available()) {
     // Aguarda entrada
     delay(100);
@@ -572,6 +572,6 @@ void requestCustomMessage() {
   if(message.length() > 0 && message.length() <= MAX_MESSAGE_LENGTH) {
     sendPredefinedMessage(message.c_str());
   } else {
-    Serial.println("❌ Mensagem muito longa ou vazia!");
+    Serial.println("Mensagem muito longa ou vazia!");
   }
 }

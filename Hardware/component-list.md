@@ -4,7 +4,7 @@
 
 | Component | Quantity | Specification | Notes |
 |-----------|----------|---------------|-------|
-| Arduino Uno | 1 | ATmega328P | Or compatible (Nano, Mega) |
+| Arduino Uno | 1 | ATmega328P | Or compatible (Uno R3) |
 | RGB LED | 1 | Common Cathode | 5mm, 4-pin |
 | Resistors | 3 | 220Ω, 1/4W | For LED current limiting |
 | Push Buttons | 2 | Tactile, 6mm | Momentary switch |

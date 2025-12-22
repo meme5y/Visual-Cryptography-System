@@ -13,7 +13,7 @@
 | Team Member | Role | Expertise | Contribution |
 |-------------|------|-----------|--------------|
 | **Fernando Augusto** | Systems Architect & Programmer | Embedded Systems, Protocols, Algorithms | Protocol design, encryption algorithms, firmware development |
-| **[Nome do Amigo]** | Hardware Specialist & Concept Lead | Electronics Assembly, System Testing | Physical implementation, component selection, concept validation |
+| **Elton Dos Santos** | Hardware Specialist & Concept Lead | Electronics Assembly, System Testing | Physical implementation, component selection, concept validation |
 
 ## 🎯 Project Vision
 Transforming **light into a secure communication channel** using Arduino, RGB LEDs, and custom cryptography protocols. This system demonstrates how simple hardware can implement complex secure communication for educational and practical applications.
@@ -147,7 +147,7 @@ DEMO (1000ms):  1 bps  - Educational, easily observable
 
 ## 🎓 Educational Value
 
-### For Computer Science ([Nome do Amigo]):
+### For Computer Science (Elton Dos Santos):
 - **Practical cryptography** implementation
 - **Communication protocols** design and analysis
 - **Data serialization/deserialization** techniques
@@ -250,7 +250,7 @@ Visual-Cryptography-System/
 ### Installation:
 1. **Clone this repository:**
    ```bash
-   git clone https://github.com/[your-username]/Visual-Cryptography-System.git
+   git clone https://github.com/meme5y/Visual-Cryptography-System.git
    ```
 
 2. **Open Arduino IDE:**
@@ -314,12 +314,12 @@ Algoritmo: XOR Stream Cipher
 ### Development Timeline:
 ```
 WEEK 1-2: Research & Concept Development
-  - [Nome do Amigo]: Cryptography research, use case analysis
+  - Elton Dos Santos: Cryptography research, use case analysis
   - Fernando: Protocol design, technical feasibility
 
 WEEK 3-4: Implementation Phase  
   - Fernando: Firmware development, protocol implementation
-  - [Nome do Amigo]: Hardware selection, circuit design
+  - Elton Dos Santos: Hardware selection, circuit design
 
 WEEK 5-6: Integration & Testing
   - Both: Physical assembly, system integration
@@ -346,7 +346,7 @@ WEEK 7-8: Documentation & Presentation
 - ✅ **System Architecture**: Modular, maintainable code structure
 - ✅ **Debugging**: Comprehensive Serial debugging implementation
 
-### [Nome do Amigo] (Computer Science):
+### Elton Dos Santos (Computer Science):
 - ✅ **Cryptography**: XOR cipher implementation and analysis
 - ✅ **Hardware Assembly**: Circuit design and construction
 - ✅ **Testing Methodology**: Systematic validation procedures
@@ -410,7 +410,7 @@ TRANSMISSION TESTS:
 | Team Member | Focus Area | Contact | Academic Goals |
 |-------------|------------|---------|---------------|
 | Fernando Augusto | Embedded Systems, AI | [arthur874066@gmail.com](mailto:arthur874066@gmail.com) | Aerospace/Computer Engineering at Boston University |
-| [Nome do Amigo] | Computer Science, Security | [Email do Amigo] | Computer Science & Cryptography |
+| Elton Dos Santos| Computer Science, Security |dossantoselton398@gmail.com  | Computer Science & Cryptography |
 
 ## 📄 License
 This project is licensed under the **MIT License** - see the LICENSE file for details.
@@ -459,7 +459,5 @@ We welcome:
 - **Collaboration** proposals from students
 - **Technical suggestions** for improvement
 - **Translation help** for documentation
-
-**Repository:** https://github.com/[your-username]/Visual-Cryptography-System  
-**Issues:** https://github.com/[your-username]/Visual-Cryptography-System/issues  
+ 
 **Discussions:** Open for technical questions

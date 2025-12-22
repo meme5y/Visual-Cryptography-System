@@ -1,7 +1,7 @@
 // encryption_algorithms.h
 // Cryptographic functions for SecureLight Protocol
 // Educational implementation - NOT for real security
-// Developed by: Fernando Augusto & [Nome do Amigo]
+// Developed by: Fernando Augusto & Elton Dos Santos
 
 #ifndef ENCRYPTION_ALGORITHMS_H
 #define ENCRYPTION_ALGORITHMS_H

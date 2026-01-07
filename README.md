@@ -409,7 +409,7 @@ TRANSMISSION TESTS:
 
 | Team Member | Focus Area | Contact | Academic Goals |
 |-------------|------------|---------|---------------|
-| Fernando Augusto | Embedded Systems, AI | [arthur874066@gmail.com](mailto:arthur874066@gmail.com) | Aerospace/Computer Engineering at Boston University |
+| Fernando Augusto | Embedded Systems, AI | [arthur874066@gmail.com](mailto:arthur874066@gmail.com) | Aerospace/Computer Engineering |
 | Elton Dos Santos| Computer Science, Security |dossantoselton398@gmail.com  | Computer Science & Cryptography |
 
 ## 📄 License
